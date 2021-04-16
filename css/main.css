@@ -16,11 +16,9 @@ body {
   margin: 0;
 }
 
-main {
-  background-color: grey;
-}
-
 header {
+  background-color: #e2e2e2;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,12 +26,22 @@ header {
   padding: .5rem 1rem;
 }
 
+nav a:hover {
+  background-color: #fff;
+  border-color: #fff;
+  color: #fff;
+}
+
 nav ul {
   list-style-type: none;
   padding: 0;
-  margin: .5rem;
+  margin: .5rem auto;
 
   display: flex;
+}
+
+header img {
+  width: 2rem;
 }
 
 nav a {
@@ -45,15 +53,18 @@ nav a {
 header h1 {
   margin: 0;
   padding: 0;
+  max-width: 90em;
 }
 
 header p {
-    font-size: 1.125rem;
+  font-size: 1.125rem;
 }
 
 @media only screen and (min-width: 40em) {
+
   header {
     flex-direction: row;
     justify-content: space-around;
   }
+
 }
