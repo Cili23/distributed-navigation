@@ -1,0 +1,41 @@
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+background-color: #e2e2e2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+header nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #0074d9;
+  padding: 0 .5rem;
+}
